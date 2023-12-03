@@ -1,4 +1,4 @@
-package FunnyFillin;
+package MadLibs;
 
 import java.util.Scanner;
 import java.io.*;
@@ -42,7 +42,7 @@ class Game {
 
         // Output to markdown file
         try {
-            PrintWriter file = new PrintWriter(new FileWriter("./FunnyFillin/output.md"));
+            PrintWriter file = new PrintWriter(new FileWriter("./MadLibs/output.md"));
             file.print(String.format(story, (Object[]) userInput));
             file.close();
         }
