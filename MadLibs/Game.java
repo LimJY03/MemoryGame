@@ -43,7 +43,7 @@ class Game {
         // Output to markdown file
         try {
             PrintWriter file = new PrintWriter(new FileWriter("./MadLibs/output.md"));
-            file.print(String.format(story, (Object[]) userInput));
+            file.printf(story, (Object[]) userInput);
             file.close();
         }
         catch (IOException e) { System.out.println(e); }
